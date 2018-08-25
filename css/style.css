@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "CaslonGraphique";
+    src: url(../fonts/CaslonGraphique.otf);
+    font-family: "ProximaNovaThin";
+    src: url(../fonts/ProximaNovaThin.otf);
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.settings-title {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.settings-subtitle {
+    font-family: ProximaNovaThin;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+}
+
+button {
+    background-color: white;
+    width: 35rem;
+    height: 5rem;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(255, 99, 98, .65);
+}
+
+.button-spacing {
+    margin: 4rem;
+}
+
+#thirty, #sixty {
+    display: block;
+    margin: auto;
+}
