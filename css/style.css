@@ -54,5 +54,6 @@ h1 {
     font-family: proxima-nova, sans-serif;
     font-size: 2rem;
     font-weight: 700;
+    outline: 0;
 }
 
