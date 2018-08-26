@@ -48,7 +48,7 @@ h1 {
     margin: auto;
 }
 
- #thirty:focus, #sixty:focus {
+.btn-seconds-active {
     background-color:#ff6e62;
     color: white;
     font-family: proxima-nova, sans-serif;
@@ -78,10 +78,9 @@ h1 {
     font-weight: 700;
     color: #ff6e62;
     border-style: none;
-
 }
 
-.swiper-slide:focus {
+.btn-set-active {
     background-color: #ff6e62;
     color: white;
 }
