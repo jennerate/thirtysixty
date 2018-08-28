@@ -9,36 +9,55 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
-        <div>
-            <h1 class="settings-title">time</h1> 
-            <p class="settings-subtitle">length of set</p>
-            <span class="button-spacing"></span>
-            <button type="button" id="thirty" class="button-styling btn-seconds">30 sec.</button>
-            <span class="button-spacing"></span>
-            <button type="button" id="sixty" class="button-styling btn-seconds"><p>60 sec.</p></button>
-        </div>
-        <div>
-            <h1 class="settings-title">sets</h1> 
-            <p class="settings-subtitle">number of sets</p>
-        </div>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <button class="swiper-slide btn-set">1</button>
-                <button class="swiper-slide btn-set">2</button>
-                <button class="swiper-slide btn-set">3</button>
-                <button class="swiper-slide btn-set">4</button>
-                <button class="swiper-slide btn-set">5</button>
-                <button class="swiper-slide btn-set">6</button>
-                <button class="swiper-slide btn-set">7</button>
-                <button class="swiper-slide btn-set">8</button>
-                <button class="swiper-slide btn-set">9</button>
-                <button class="swiper-slide btn-set">10</button>
+        <form id="workout-info">
+            <div>
+                <h1 class="settings-title">time</h1> 
+                <p class="settings-subtitle">length of set</p>
+                <input type="button" value="30 sec."  class="button-styling btn-seconds" id="thirty"></input>
+                <input type="button" value="60 sec."  class="button-styling btn-seconds" id="sixty"></input>
             </div>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-                crossorigin="anonymous"></script>
-    
+            <div>
+                <h1 class="settings-title">sets</h1> 
+                <p class="settings-subtitle">number of sets</p>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <input type="button" class="swiper-slide btn-set desired-sets" value="1"></input>
+                    <input type="button" class="swiper-slide btn-set desired-sets" value="2"></input>
+                    <input type="button" class="swiper-slide btn-set desired-sets" value="3"></input>
+                    <input type="button" class="swiper-slide btn-set desired-sets" value="4"></input>
+                    <input type="button" class="swiper-slide btn-set desired-sets" value="5"></input>
+                    <input type="button" class="swiper-slide btn-set desired-sets" value="6"></input>
+                    <input type="button" class="swiper-slide btn-set desired-sets" value="7"></input>
+                    <input type="button" class="swiper-slide btn-set desired-sets" value="8"></input>
+                    <input type="button" class="swiper-slide btn-set desired-sets" value="9"></input>
+                    <input type="button" class="swiper-slide btn-set desired-sets" value="10"></input>
+                </div>
+            </div>
+            <div>
+                <h1 class="settings-title">rests</h1> 
+                <p class="settings-subtitle">resting time in-between sets</p>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <input type="button" class="swiper-slide btn-set" value="5 sec." id="1"></input>
+                    <input type="button" class="swiper-slide btn-set" value="10 sec."></input>
+                    <input type="button" class="swiper-slide btn-set" value="15 sec."></input>
+                    <input type="button" class="swiper-slide btn-set" value="20 sec."></input>
+                    <input type="button" class="swiper-slide btn-set" value="25 sec."></input>
+                    <input type="button" class="swiper-slide btn-set" value="30 sec."></input>
+                    <input type="button" class="swiper-slide btn-set" value="35 sec."></input>
+                    <input type="button" class="swiper-slide btn-set" value="40 sec."></input>
+                    <input type="button" class="swiper-slide btn-set" value="45 sec."></input>
+                    <input type="button" class="swiper-slide btn-set" value="55 sec."></input>
+                    <input type="button" class="swiper-slide btn-set" value="60 sec."></input>
+                </div>
+            </div>
+            <div class="container-fluid spacing">
+                <button type="button" form="workout-info" value="let's go!" class="btn btn-block submit-settings">let's go!</button>
+            </div>
+        </form>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
         <script src="js/script.js"></script>
     </body>

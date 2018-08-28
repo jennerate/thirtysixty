@@ -12,40 +12,41 @@ h1 {
 
 .settings-title {
     font-family: proxima-nova, sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
+    font-weight: 400;
+    font-size: 3rem;
     text-align: center;
-    padding-top: 4rem;
+    padding-top: 9rem;
+    color: #252755;
+
 }
 
 .settings-subtitle {
     font-family: ProximaNovaThin;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 300;
     text-align: center;
     margin: 0;
+    color: #252755;
 }
 
 .button-styling {
     background-color: white;
-    width: 35rem;
-    height: 5rem;
+    width: 45rem;
+    height: 7rem;
     font-family: proxima-nova, sans-serif;
     font-size: 2rem;
     font-weight: 700;
     color: #ff6e62;
     border-style: none;
-    border-radius: 7px;
+    border-radius: 10px;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, .16);
 }
 
-.button-spacing {
-    margin: 4rem;
-}
 
 #thirty, #sixty {
     display: block;
     margin: auto;
+    margin-top: 3rem;
 }
 
 .btn-seconds-active {
@@ -58,15 +59,14 @@ h1 {
 }
 
 .swiper-container {
-    margin-top: 1rem;
-    width: 35rem;
-    height: 35rem;
+    margin-top: 3rem;
+    width: 45rem;
     padding: 0.5rem;
 }
 
 .swiper-slide {
-    width: 3rem;
-    height: 5rem;
+    width: 4rem;
+    height: 6rem;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, .16);
     display: flex;
     justify-content: center;
@@ -80,8 +80,37 @@ h1 {
     border-style: none;
 }
 
+
+.swiper-slide:focus, .swiper-slide:visited, .swiper-slide:active {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+    -webkit-tap-highlight-color: transparent;  
+}
+
 .btn-set-active {
     background-color: #ff6e62;
     color: white;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    border-radius: 7px;
+    border-style: none; 
+}
+
+.submit-settings {
+    background-color: #ff6e62;
+    color: white;
+    font-size: 4rem;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    width: 100%;
+    height: 20rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, .16);
+
+}
+
+.spacing {
+    padding-top: 9rem;
 }
 
