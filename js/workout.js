@@ -37,4 +37,14 @@ function changeGif() {
 
 changeGif();
 
-document.getElementById("remaining-time").innerHTML = "test";
+var timerId = setInterval(countdown, 1000);
+
+function countdown() {
+  if (selectedTime == 0) {
+    clearTimeout(timerId);
+    //load ajax here
+  } else {
+    document.getElementById("remaining-time").innerHTML = "00:" + selectedTime;
+    selectedTime--;
+  }
+}

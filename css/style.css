@@ -133,7 +133,7 @@ h1 {
 }
 
 .topnav {
-    margin-top: 9rem;
+    /* margin-top: 9rem; */
 }
 
 .topnav p, .topnav img {
@@ -158,7 +158,6 @@ iframe {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 40rem;
     background-color: white;
     color: white;
     text-align: center;
@@ -185,7 +184,7 @@ iframe {
 }
 
 .cont {
-    height: 120rem;
+    /* height: 120rem; */
     display:flex;
     align-items: center; 
     justify-content: center;
