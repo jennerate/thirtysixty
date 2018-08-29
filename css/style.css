@@ -42,11 +42,28 @@ h1 {
     box-shadow: 0px 3px 20px rgba(0, 0, 0, .16);
 }
 
-
 #thirty, #sixty {
     display: block;
     margin: auto;
     margin-top: 3rem;
+}
+
+.btn-set-active {
+    color: white !important;
+    background-color: #ff6e62 !important;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    border-radius: 7px;
+    border-style: none; 
+}
+
+.btn-rests-active  {
+    color: white !important;
+    background-color: #ff6e62 !important;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    border-radius: 7px;
+    border-style: none; 
 }
 
 .btn-seconds-active {
@@ -86,15 +103,6 @@ h1 {
     -webkit-tap-highlight-color: transparent;  
 }
 
-.btn-set-active {
-    background-color: #ff6e62;
-    color: white;
-    transform: scale(1.2);
-    transition-duration: 0.5s;
-    border-radius: 7px;
-    border-style: none; 
-}
-
 .submit-settings {
     background-color: #ff6e62;
     color: white;
@@ -117,3 +125,35 @@ h1 {
     padding-top: 9rem;
 }
 
+.back-arrow {
+    width: 5%;
+    height: auto;
+}
+
+.topnav p, .topnav img {
+    display: inline-block;
+}
+
+#remaining-time {
+    font-family: proxima-nova, sans-serif;
+    font-size: 4rem;
+    width: 50%;
+    text-align: right;
+    color: #ff6e62;
+}
+
+iframe {
+    width: 100%;
+}
+
+.test1 {
+    size: 2rem;
+    color: grey;
+    display: block;
+}
+.test {
+    size: 2rem;
+    color: black;
+    display: block;
+    text-align: middle;
+}
