@@ -126,8 +126,14 @@ h1 {
 }
 
 .back-arrow {
-    width: 5%;
+    margin-left: 3rem;
+    width: 10%;
     height: auto;
+    margin-top: 2.5rem;
+}
+
+.topnav {
+    margin-top: 9rem;
 }
 
 .topnav p, .topnav img {
@@ -135,25 +141,70 @@ h1 {
 }
 
 #remaining-time {
-    font-family: proxima-nova, sans-serif;
-    font-size: 4rem;
+    font-family: proximanovathin, sans-serif;
+    font-size: 10rem;
     width: 50%;
     text-align: right;
     color: #ff6e62;
+    padding-right: 5rem;
 }
 
 iframe {
     width: 100%;
 }
 
-.test1 {
-    size: 2rem;
-    color: grey;
-    display: block;
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40rem;
+    background-color: white;
+    color: white;
+    text-align: center;
+    display:flex;
+    align-items: center; 
+    justify-content: center;
 }
-.test {
-    size: 2rem;
+
+.set-styling {
+    font-size: 5rem;
+    color: #ff6e62;
+    font-family: Proxima-nova, sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.reset {
+    display: inline-block;
+}
+
+.pause {
+    display: inline-block;
+}
+
+.cont {
+    height: 120rem;
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.giphy-styling {
+    width: 100%;
+}
+
+.img-resizing-pause {
+    width: 70%;
+    height: auto;
+}
+
+.img-resizing-reset {
+    width: 50%;
+    height: auto;
+}
+
+#currentSets {
     color: black;
-    display: block;
-    text-align: middle;
 }

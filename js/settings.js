@@ -20,7 +20,6 @@ $('.desired-rests').click(function() {
     $(this).addClass('btn-rests-active');
 });
 
-
 function Workout(time, set, rest) {
     this.time = time;
     this.set = set;
@@ -48,7 +47,10 @@ $('.desired-rests').click(function(){
 }) 
 
 $('#submitForm').click(function() {
-    console.log(workoutDetails);
+   $(".settings-container").hide();
+   $(".workout-container").show();
+    remainingSets = workoutDetails.set;
+    document.getElementById("currentSets").innerHTML = remainingSets;
 });
 
-
+// sets page if statement determine which page to load
