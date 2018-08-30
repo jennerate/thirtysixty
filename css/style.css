@@ -16,7 +16,7 @@ h1 {
     font-size: 1.5rem;
     text-align: center;
     color: #252755;
-    margin-top: 2.5rem;
+    margin-top: 15px;
 }
 
 .settings-subtitle {
@@ -76,18 +76,14 @@ h1 {
 }
 
 .swiper-container {
-    margin-top: 1rem;
     width: 85%;
     padding: 0.7rem;
 }
 
 .swiper-slide {
     width: 2rem;
-    height: 4rem;
+    height: 3.5rem;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, .16);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 7px;
     font-family: proxima-nova, sans-serif;
     font-size: 1.4em;
@@ -98,6 +94,17 @@ h1 {
     line-height: 1;
 }
 
+.swiper-slide {
+    line-height: 0.7;
+}
+
+
+.test {
+    color: grey;
+}
+.btn, button {
+    white-space: normal;
+}
 
 .swiper-slide:focus, .swiper-slide:visited, .swiper-slide:active {
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
@@ -281,4 +288,17 @@ iframe {
     display: flex;
     align-items: center;
     height: 75vh; 
+}
+
+
+.remain {
+    margin-top: 20px;
+    line-height: 0.2;
+    margin-bottom: 13px;
+}
+
+.sec {
+    margin-top: 0;
+    line-height: 0;
+    font-size: 0.6rem;
 }
