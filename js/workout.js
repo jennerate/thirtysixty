@@ -55,9 +55,9 @@ function workoutCountdown() {
             $(".rests-container").show();
             document.getElementById("remaining-time").innerHTML = "00:00";
             remainingTime = selectedTime;
+            currentSet++;
             document.getElementById("currentSets").innerHTML = currentSet;            
             restsCountdown();
-            currentSet++;
         } else {
             if (remainingTime < 10) {
                 document.getElementById("remaining-time").innerHTML = "00:0" + remainingTime;
@@ -71,16 +71,17 @@ function workoutCountdown() {
 }
  
 function restsCountdown() {
+    console.log(currentSet);
     var timerId = setInterval(countdownRests, 1000);
     function countdownRests() {
-        if ((remainingRests == 0) && (currentSet == selectedSets)) {
+        if ((remainingRests == 0) && (currentSet >= selectedSets)) {
             $(".congratulations-container").show();
             $(".settings-container").hide();
             $(".workout-container").hide();
             $(".rests-container").hide();
         } 
         
-        if ((remainingRests == 0) && !(currentSet == selectedSets)) {
+        if ((remainingRests == 0) && (currentSet <= selectedSets)) {
             clearTimeout(timerId);
             $(".congratulations-container").hide();
             $(".settings-container").hide();

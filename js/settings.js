@@ -41,7 +41,7 @@ var currentSet;
 $('.desired-sets').click( function() {
     selectedSets = $(this).val();
     workoutDetails.set = selectedSets;
-    currentSet = 0;
+    currentSet = 1;
 });
 
 var selectedRests;
