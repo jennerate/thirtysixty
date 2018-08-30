@@ -12,17 +12,16 @@ h1 {
 
 .settings-title {
     font-family: proxima-nova, sans-serif;
-    font-weight: 400;
-    font-size: 3rem;
+    font-weight: 100;
+    font-size: 1.5rem;
     text-align: center;
-    padding-top: 9rem;
     color: #252755;
-
+    margin-top: 2.5rem;
 }
 
 .settings-subtitle {
     font-family: ProximaNovaThin;
-    font-size: 2rem;
+    font-size: 0.9rem;
     font-weight: 300;
     text-align: center;
     margin: 0;
@@ -31,10 +30,10 @@ h1 {
 
 .button-styling {
     background-color: white;
-    width: 45rem;
-    height: 7rem;
+    width: 80%;
     font-family: proxima-nova, sans-serif;
-    font-size: 2rem;
+    font-size: 1.4em;
+    padding: 1.2rem;
     font-weight: 700;
     color: #ff6e62;
     border-style: none;
@@ -45,7 +44,7 @@ h1 {
 #thirty, #sixty {
     display: block;
     margin: auto;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .btn-set-active {
@@ -53,7 +52,7 @@ h1 {
     background-color: #ff6e62 !important;
     transform: scale(1.2);
     transition-duration: 0.5s;
-    border-radius: 7px;
+    border-radius: 5px;
     border-style: none; 
 }
 
@@ -70,31 +69,33 @@ h1 {
     background-color:#ff6e62;
     color: white;
     font-family: proxima-nova, sans-serif;
-    font-size: 2rem;
+    font-size: 1.4em;
     font-weight: 700;
-    outline: 0;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
 }
 
 .swiper-container {
-    margin-top: 3rem;
-    width: 45rem;
-    padding: 0.5rem;
+    margin-top: 1rem;
+    width: 85%;
+    padding: 0.7rem;
 }
 
 .swiper-slide {
-    width: 4rem;
-    height: 6rem;
+    width: 2rem;
+    height: 4rem;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, .16);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 7px;
     font-family: proxima-nova, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.4em;
     background-color: white;
     font-weight: 700;
     color: #ff6e62;
     border-style: none;
+    line-height: 1;
 }
 
 
@@ -106,11 +107,11 @@ h1 {
 .submit-settings {
     background-color: #ff6e62;
     color: white;
-    font-size: 4rem;
+    font-size: 1.5rem;
     font-family: proxima-nova, sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     width: 100%;
-    height: 15.5rem;
+    height: 15vh;
     margin: 0;
     padding: 0;
     border: none;
@@ -118,6 +119,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    bottom: 0;
 
 }
 
