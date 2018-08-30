@@ -176,7 +176,7 @@ iframe {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 15vh;
+    height: 25vh;
     background-color: white;
     color: white;
     text-align: center;
@@ -191,6 +191,7 @@ iframe {
     font-family: ProximaNovaThin, sans-serif;
     font-weight: 700;
     margin: 0;
+    margin-left: 1.5rem;
     padding: 0;
 }
 
@@ -215,6 +216,7 @@ iframe {
 .img-resizing-pause {
     width: 60%;
     height: auto;
+    margin-right: 1rem;
 }
 
 .img-resizing-reset {
@@ -229,6 +231,7 @@ iframe {
     font-size: 2rem;
     font-weight: 700;
     margin-left: 0.5rem;
+    margin-top: 13px;
 }
 
 .sec-remaining {
@@ -312,9 +315,56 @@ iframe {
 
 
 .col-icon {
-    width: 35%;
+    width: 33.333%;
 }
 
 .col-icon-last {
-    width: 30%;
+    width: 33.333%;
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.confetti-container {
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.tile {
+    width: 80%;
+    height: 15rem;;
+    background-color: white;
+    position: absolute;
+    z-index: 100;
+}
+
+.tile h1 {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    color: #ff6e62;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+}
+
+.redo {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    z-index: 100;
+    width: 100vw;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff6e62;
+    border-style: none;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, .16);
+
 }

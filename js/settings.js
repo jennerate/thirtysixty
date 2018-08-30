@@ -26,7 +26,7 @@ function Workout(time, set, rest) {
     this.rest = rest;
 }
 
-var workoutDetails = new Workout("a", "b","c");
+var workoutDetails = new Workout(0,0,0);
 
 var selectedTime;
 var remainingTime;
@@ -34,12 +34,11 @@ $('#thirty, #sixty').click(function() {
     // selectedTime = $(this).val();
     // workoutDetails.time = selectedTime;
     // remainingTime = selectedTime;
-    remainingTime = 3;
-    selectedTime = 3;
+    remainingTime = 2;
+     selectedTime = 2;
 });
 
 var selectedSets;
-var remainingSets;
 $('.desired-sets').click( function() {
     selectedSets = $(this).val();
     workoutDetails.set = selectedSets;
@@ -48,9 +47,11 @@ $('.desired-sets').click( function() {
 var selectedRests;
 var remainingRests;
 $('.desired-rests').click(function(){
-    selectedRests = $(this).val();
-    workoutDetails.rest = selectedRests;
-    remainingRests = selectedRests;
+    // selectedRests = $(this).val();
+    // workoutDetails.rest = selectedRests;
+    // remainingRests = selectedRests;
+     selectedRests = 1;
+     remainingRests = 1;
 }) 
 
 $('#submitForm').click(function() {
@@ -62,3 +63,8 @@ $('#submitForm').click(function() {
     remainingSets = workoutDetails.set;
     document.getElementById("currentSets").innerHTML = remainingSets;
 });
+
+
+var confettiSettings = {"target":"my-canvas","max":"800","size":"1","animate":true,"props":["circle","square","triangle","line"],"colors":[[165,104,246],[230,61,135],[0,199,228],[253,214,126]],"clock":"25","width":"375","height":"667"};
+var confetti = new ConfettiGenerator(confettiSettings);
+confetti.render();
