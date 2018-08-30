@@ -37,9 +37,11 @@ $('#thirty, #sixty').click(function() {
 });
 
 var selectedSets;
+var currentSet;
 $('.desired-sets').click( function() {
     selectedSets = $(this).val();
     workoutDetails.set = selectedSets;
+    currentSet = 0;
 });
 
 var selectedRests;
@@ -57,7 +59,7 @@ $('#submitForm').click(function() {
    $(".congratulations-container").hide();
    workoutCountdown();
     remainingSets = workoutDetails.set;
-    document.getElementById("currentSets").innerHTML = remainingSets;
+    document.getElementById("currentSets").innerHTML = currentSet;
 });
 
 
