@@ -1,0 +1,1 @@
+check it out at https://jennerate.github.io/thirtysixty/index.html, view as an iphone 6/7/8 on dev tools to mimic the hybrid app.
