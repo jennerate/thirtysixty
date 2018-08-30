@@ -141,9 +141,16 @@ h1 {
     float: left;
 }
 
+.back-arrow-white {
+    width: 13%;
+    height: auto;
+    float: left;
+}
+
 .back-sizing {
     position: absolute;
     left: 30px;
+    top: 30px
 }
 
 .topnav {
@@ -164,7 +171,7 @@ h1 {
     text-align: right;
     color: #ff6e62;
     padding-right: 5rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
 
 iframe {
@@ -207,11 +214,13 @@ iframe {
     display:flex;
     align-items: center; 
     justify-content: center;
+    height: 80vh;
 }
 
 .giphy-styling {
     width: 100%;
     position: relative;
+    margin-bottom: 5em;
 }
 
 .img-resizing-pause {

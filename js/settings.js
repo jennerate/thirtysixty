@@ -68,3 +68,11 @@ $('#submitForm').click(function() {
 var confettiSettings = {"target":"my-canvas","max":"800","size":"1","animate":true,"props":["circle","square","triangle","line"],"colors":[[165,104,246],[230,61,135],[0,199,228],[253,214,126]],"clock":"25","width":"375","height":"667"};
 var confetti = new ConfettiGenerator(confettiSettings);
 confetti.render();
+
+
+$("#congrats-btn").click(function() {
+    $(".settings-container").show();
+    $(".rests-container").hide();
+    $(".workout-container").hide();
+    $(".congratulations-container").hide();
+});
