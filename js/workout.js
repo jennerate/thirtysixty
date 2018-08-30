@@ -37,14 +37,70 @@ function changeGif() {
 
 changeGif();
 
-var timerId = setInterval(countdown, 1000);
-
-function countdown() {
-  if (selectedTime == 0) {
-    clearTimeout(timerId);
-    //load ajax here
-  } else {
-    document.getElementById("remaining-time").innerHTML = "00:" + selectedTime;
-    selectedTime--;
-  }
+function backToWorkouts() {
+    $('.settings-container').load("settings.html").hide();
+    $('.workout-container').load("workout.html").show();
+    remainingSets++;
+    $('.rests-container').load("rests.html").hide();  
+    $('.congratulations-container').load("congratulations.html").hide();      
 }
+
+function workoutCountdown() {
+    var timerId = setInterval(countdown, 1000);
+
+    function countdown() {
+        if (remainingTime == 0) {
+            clearTimeout(timerId);
+            $(".settings-container").hide();
+            $(".workout-container").hide();
+            $(".rests-container").show();
+            document.getElementById("remaining-time").innerHTML = "00:00";
+            remainingTime = selectedTime;
+            restsCountdown();
+            remainingSets--;
+        } else {
+            if (remainingTime < 10) {
+                document.getElementById("remaining-time").innerHTML = "00:0" + remainingTime;
+                remainingTime--;
+            } else {
+                document.getElementById("remaining-time").innerHTML = "00:" +  remainingTime;
+                remainingTime--;
+            }
+        }
+    }
+}
+ 
+function restsCountdown() {
+    var timerId = setInterval(countdownRests, 1000);
+    function countdownRests() {
+        if ((remainingRests == 0) && (remainingSets == 0)) {
+            $(".congratulations-container").show();
+            $(".settings-container").hide();
+            $(".workout-container").hide();
+            $(".rests-container").hide();
+        } 
+        
+        if ((remainingRests == 0)&& !(remainingSets == 0)) {
+            clearTimeout(timerId);
+            $(".settings-container").hide();
+            $(".workout-container").show();
+            $(".rests-container").hide();
+            document.getElementById("remainingRests").innerHTML = "0";
+            remainingRests = selectedRests;
+            workoutCountdown();
+        } 
+        
+        else {
+            document.getElementById("remainingRests").innerHTML = remainingRests;
+            remainingRests--;
+        }
+    }
+}
+
+
+function returnToWorkout() {
+    $(".congratulations-container").hide();
+    $(".settings-container").hide();
+    $(".workout-container").show();
+    $(".rests-container").hide();
+} 

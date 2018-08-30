@@ -126,14 +126,21 @@ h1 {
 }
 
 .back-arrow {
-    margin-left: 3rem;
-    width: 10%;
+    width: 25%;
     height: auto;
-    margin-top: 2.5rem;
+    float: left;
+}
+
+.back-sizing {
+    position: absolute;
+    left: 30px;
 }
 
 .topnav {
-    /* margin-top: 9rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
 }
 
 .topnav p, .topnav img {
@@ -184,7 +191,6 @@ iframe {
 }
 
 .cont {
-    /* height: 120rem; */
     display:flex;
     align-items: center; 
     justify-content: center;
@@ -206,4 +212,70 @@ iframe {
 
 #currentSets {
     color: black;
+}
+
+.sec-remaining {
+    font-family: Proxima-nova, sans-serif;
+    font-size: 2rem;   
+}
+
+.rests-background {
+    background-color:#252755;
+    height: 100vh;
+}
+
+.rests-seconds-remaining p {
+    display: inline-block;
+}
+
+.page-title {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-family: ProximaNovaThin;
+    margin: 0;
+    padding: 0;
+}
+
+#remainingRests {
+    color: white;
+    font-size: 10rem;
+    font-family: Proxima-Nova, sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    align-self: flex-end;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1;
+}
+
+.rests-seconds-remaining {
+    display: block;
+    margin: auto;
+}
+
+.sec-remaining {
+    font-family: ProximaNovaThin;
+    color: white;
+    display: inline-block;
+    align-self: flex-end;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.skip-btn {
+    display: block;
+    width: 80%;
+    margin: auto;
+    color: white;
+    background-color: #ff6e62;
+    font-family: ProximaNovaThin;
+    font-size: 2rem;
+}
+
+
+.time-spacing {
+    display: flex;
+    align-items: center;
+    height: 75vh; 
 }

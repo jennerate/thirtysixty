@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Settings</title>
+        <title>30/60</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -13,9 +14,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
         <div class="settings-container"></div>
         <div class="workout-container"></div>
+        <div class="rests-container"></div>
+        <div class="congratulations-container"></div>
         <script>
-            $('.settings-container').load("settings.html");
-            $('.workout-container').load("workout.html").hide();        
+            $('.settings-container').load("settings.html").hide();
+            $('.workout-container').load("workout.html").hide();
+            $('.rests-container').load("rests.html").show();  
+            $('.congratulations-container').load("congratulations.html").hide();      
     </script>
     </body>
 </html>
