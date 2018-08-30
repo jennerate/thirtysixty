@@ -31,11 +31,9 @@ var workoutDetails = new Workout("a", "b","c");
 var selectedTime;
 var remainingTime;
 $('#thirty, #sixty').click(function() {
-    // selectedTime = $(this).val();
-    // workoutDetails.time = selectedTime;
-    // remainingTime = selectedTime;
-    remainingTime = 3;
-    selectedTime = 3;
+    selectedTime = $(this).val();
+    workoutDetails.time = selectedTime;
+    remainingTime = selectedTime;
 });
 
 var selectedSets;
