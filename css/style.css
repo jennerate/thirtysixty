@@ -159,11 +159,12 @@ h1 {
 
 #remaining-time {
     font-family: proximanovathin, sans-serif;
-    font-size: 10rem;
-    width: 50%;
+    font-size: 30px;
+    width: 60%;
     text-align: right;
     color: #ff6e62;
     padding-right: 5rem;
+    margin-top: 1rem;
 }
 
 iframe {
@@ -175,6 +176,7 @@ iframe {
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 15vh;
     background-color: white;
     color: white;
     text-align: center;
@@ -184,9 +186,9 @@ iframe {
 }
 
 .set-styling {
-    font-size: 5rem;
+    font-size: 30px;
     color: #ff6e62;
-    font-family: Proxima-nova, sans-serif;
+    font-family: ProximaNovaThin, sans-serif;
     font-weight: 700;
     margin: 0;
     padding: 0;
@@ -211,17 +213,22 @@ iframe {
 }
 
 .img-resizing-pause {
-    width: 70%;
+    width: 60%;
     height: auto;
 }
 
 .img-resizing-reset {
-    width: 50%;
+    width: 40%;
     height: auto;
+    float: middle;
 }
 
 #currentSets {
-    color: black;
+    color: #ff6e62;
+    font-family: Proxima-nova, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 0.5rem;
 }
 
 .sec-remaining {
@@ -301,4 +308,13 @@ iframe {
     margin-top: 0;
     line-height: 0;
     font-size: 0.6rem;
+}
+
+
+.col-icon {
+    width: 35%;
+}
+
+.col-icon-last {
+    width: 30%;
 }

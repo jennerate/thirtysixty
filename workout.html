@@ -1,22 +1,24 @@
 <div class="container-fluid">
     <div class="row topnav">
-        <img src="assets/backarrow.png" class="back-arrow col-sm-6"/>
-        <p id="remaining-time" class="col-sm-6"></p>
+        <div class="back-sizing">
+            <img src="assets/backarrow.png" class="back-arrow"/>
+        </div>
+        <p id="remaining-time"></p>
     </div>
     <div class="cont">
         <div id="giphy" class="giphy-styling"></div>
     </div>
         <div class="footer row">
-        <div class="col-sm-4">
-            <img src="assets/reset.png" class="img-resizing-reset">
-        </div>
-        <div class="col-sm-4">
-            <img src="assets/pause.png" class="img-resizing-pause">
-        </div>
-        <div class="col-sm-4">
-            <p class="set-styling">set 
-                <p id="currentSets"></p>
-            </p>
+            <div class="col-icon">
+                <img src="assets/reset.png" class="img-resizing-reset">
+            </div>
+            <div class="col-icon">
+                <img src="assets/pause.png" class="img-resizing-pause">
+            </div>
+            <div class="col-icon-last row">
+                <p class="set-styling">set</p>
+                <p id="currentSets">1</p>
+            </div>
         </div>
     </div>
 </div>
