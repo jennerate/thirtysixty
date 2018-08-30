@@ -31,11 +31,9 @@ var workoutDetails = new Workout(0,0,0);
 var selectedTime;
 var remainingTime;
 $('#thirty, #sixty').click(function() {
-    // selectedTime = $(this).val();
-    // workoutDetails.time = selectedTime;
-    // remainingTime = selectedTime;
-    remainingTime = 2;
-     selectedTime = 2;
+    selectedTime = $(this).val();
+    workoutDetails.time = selectedTime;
+    remainingTime = selectedTime;
 });
 
 var selectedSets;
@@ -47,11 +45,9 @@ $('.desired-sets').click( function() {
 var selectedRests;
 var remainingRests;
 $('.desired-rests').click(function(){
-    // selectedRests = $(this).val();
-    // workoutDetails.rest = selectedRests;
-    // remainingRests = selectedRests;
-     selectedRests = 1;
-     remainingRests = 1;
+    selectedRests = $(this).val();
+    workoutDetails.rest = selectedRests;
+    remainingRests = selectedRests;
 }) 
 
 $('#submitForm').click(function() {
