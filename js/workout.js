@@ -44,8 +44,14 @@ function backToWorkouts() {
     $('.congratulations-container').hide();      
 }
 
+
 function workoutCountdown() {
     var timerId = setInterval(countdown, 1000);
+
+    document.getElementById("reset").addEventListener("click", function(){
+        remainingTime = selectedTime;
+    }); 
+
 
     function countdown() {
         if (remainingTime == 0) {
@@ -71,8 +77,8 @@ function workoutCountdown() {
 }
  
 function restsCountdown() {
-    console.log(currentSet);
     var timerId = setInterval(countdownRests, 1000);
+
     function countdownRests() {
         if ((remainingRests == 0) && (currentSet >= selectedSets)) {
             $(".congratulations-container").show();

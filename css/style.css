@@ -80,6 +80,10 @@ h1 {
     padding: 0.7rem;
 }
 
+.hidden {
+    opacity: 0;
+}
+
 .swiper-slide {
     width: 2rem;
     height: 3.5rem;
